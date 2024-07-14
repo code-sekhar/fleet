@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name":"Button Fire Custom",
+    "class": ""
+  },
+  {
+    "id": 2,
+    "name":"Card Custom A",
+    "class": "active"
+  },
+  {
+    "id": 3,
+    "name": "Card Custom B",
+    "class": ""
+  },
+  {
+    "id": 4,
+    "name": "Card Custom C",
+    "class": ""
+  },
+  {
+    "id": 5,
+    "name": "Card Custom D",
+    "class": ""
+  },
+  {
+    "id": 5,
+    "name": "Card Custom E",
+    "class": ""
+  }
+]

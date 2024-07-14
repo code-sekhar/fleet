@@ -1,0 +1,52 @@
+<div class="top_header_tool">
+  <div class="full_column">
+    <div class="column_left">
+      <div class="tab_title">
+        <ul>
+          <li><a href="#" [class.active]="selectedTab === 'assets'" (click)="selectTab('assets')">Assets</a></li>
+          <li><a href="#" [class.active]="selectedTab === 'anatomy'" (click)="selectTab('anatomy')">Anatomy</a></li>
+          <li><a href="#" [class.active]="selectedTab === 'specifications'" (click)="selectTab('specifications')">Specifications</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="column_right">
+      <div class="select-options">
+        <select>
+          <option value="">.png</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main_box_container">
+  <div class="inner_box">
+    <div *ngIf="selectedTab === 'assets'">
+    <div class="wraper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-4 col-6" *ngFor="let data of data_box">
+            <div class="box_card_wraper">
+              <div class="top_img_box">
+        <span>
+          <img src="{{data.img}}" alt="">
+        </span>
+              </div>
+              <div class="content">
+                <h4>{{data.title}}</h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div *ngIf="selectedTab === 'anatomy'">
+<!--      <app-anatomy></app-anatomy>-->
+    </div>
+    <div *ngIf="selectedTab === 'specifications'">
+        <editor-specifications></editor-specifications>
+    </div>
+
+  </div>
+</div>

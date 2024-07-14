@@ -37,7 +37,14 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/ace-builds/src-min-noconflict/ace.js",
+              "node_modules/ace-builds/src-min-noconflict/mode-javascript.js",
+              "node_modules/ace-builds/src-min-noconflict/mode-html.js",
+              "node_modules/ace-builds/src-min-noconflict/mode-css.js",
+              "node_modules/ace-builds/src-min-noconflict/mode-typescript.js",
+              "node_modules/ace-builds/src-min-noconflict/theme-twilight.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -101,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "69e93a0e-c407-4852-9015-137dd6898711"
   }
 }
